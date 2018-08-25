@@ -1,0 +1,420 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="连接的设备:" />
+
+        <!-- <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="5dp" >
+        </ScrollView>
+ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+           
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="温度:" />
+           
+           <RadioGroup
+             android:id="@+id/rg_temperate"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+               <RadioButton
+                 android:id="@+id/rb_up_temperate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="升温" />
+               
+                <RadioButton
+                 android:id="@+id/rb_hold_temperate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:checked="true"
+                android:text="保持" />
+               
+               <RadioButton
+                 android:id="@+id/rb_down_temperate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                 android:text="降温" />
+           </RadioGroup>
+            
+           
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+           
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="饲料:" />
+           
+           <RadioGroup
+             android:id="@+id/rg_feed"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+               <RadioButton
+                 android:id="@+id/rb_add_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="1dp"
+                android:checked="true"
+                android:text="添加" />
+               
+               <RadioButton
+                 android:id="@+id/rb_no_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="1dp"
+                 android:text="不添加" />
+           </RadioGroup>
+            
+           
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+           
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="光照强度:" />
+           
+           <RadioGroup
+             android:id="@+id/rg_line"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+               <RadioButton
+                 android:id="@+id/rb_high_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="1dp"
+                android:checked="true"
+                android:text="强光" />
+               
+               <RadioButton
+                 android:id="@+id/rb_light_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="1dp"
+                 android:text="弱光" />
+           </RadioGroup>
+            
+           
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+           
+            <Button
+                android:id="@+id/addFeed"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:text=" 添加饲料" />
+            
+            
+           <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="供氧量:" />
+           
+           <RadioGroup
+             android:id="@+id/rg_ox"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+               <RadioButton
+                 android:id="@+id/rb_add_ox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="2dp"
+                android:checked="true"
+                android:text="增加" />
+               
+               <RadioButton
+                 android:id="@+id/rb_no_ox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="2dp"
+
+                 android:text="不增加" />
+           </RadioGroup> -->
+            
+           
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+           
+            
+            <Button
+                android:id="@+id/setData"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text=" 设置状态" />
+
+            <CheckBox
+                android:id="@+id/receiveData"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector"
+                android:button="@null"
+                android:checked="false"
+                android:text="     开始接收" />
+
+            <!-- <Button
+                android:id="@+id/lookData"
+                android:layout_width="110dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/build_bg"
+                android:text="@string/button_lookData" /> -->
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+	        <!-- <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp" > -->
+            
+            <TextView
+	            android:id="@+id/tv_data"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginTop="5dp"
+	            android:text="毕业设计（蔡伟鹏）  ~~~" />
+            
+           <!--  </ScrollView> -->
+            
+             </LinearLayout>
+             <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+			<TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginTop="5dp"
+	            android:text="温度:" />
+			<TextView
+	            android:id="@+id/tv_dataTem"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginTop="5dp"
+	            android:text="0" />
+           
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+			<TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginTop="5dp"
+	            android:text="湿度:" />
+			<TextView
+	            android:id="@+id/tv_dataHum"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginTop="5dp"
+	            android:text="0" />
+           
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+			<TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginTop="5dp"
+	            android:text="光照强度:" />
+			<TextView
+	            android:id="@+id/tv_dataLine"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginTop="5dp"
+	            android:text="0" />
+           
+        </LinearLayout> -->
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:text="温度阈值:" />
+            
+            <Spinner  
+	           android:id="@+id/spin_lowTem"  
+	           android:layout_width="wrap_content"  
+	           android:layout_height="wrap_content"  
+	           android:entries="@array/lowTem"  
+	         /> 
+	         
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:text="  -    " /> 
+            
+	        <Spinner  
+	           android:id="@+id/spin_highTem"  
+	           android:layout_width="wrap_content"  
+	           android:layout_height="wrap_content"  
+	           android:entries="@array/highTem"  
+	         />  
+	         
+	        
+         </LinearLayout>
+         
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:text="湿度阈值:" />
+            
+            <Spinner  
+	           android:id="@+id/spin_lowHum"  
+	           android:layout_width="wrap_content"  
+	           android:layout_height="wrap_content"  
+	           android:entries="@array/lowHum"  
+	         /> 
+	         
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:text="  -    " /> 
+            
+	        <Spinner  
+	           android:id="@+id/spin_highHum"  
+	           android:layout_width="wrap_content"  
+	           android:layout_height="wrap_content"  
+	           android:entries="@array/highHum"  
+	         />  
+	         
+	        
+         </LinearLayout>
+         
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="2dp"
+                android:checked="true"
+                android:focusable="false"
+                android:text="温度图像" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:checked="true"
+                android:focusable="false"
+                android:text="湿度图像" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

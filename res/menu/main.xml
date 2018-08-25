@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="p.mbt.MainActivity" >
+
+    <item
+        android:id="@+id/button_open"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/button_open"/>
+    <item
+        android:id="@+id/button_close"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/button_close"/>
+    <item
+        android:id="@+id/button_search"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/button_search"/>
+    <item
+        android:id="@+id/button_see"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/button_see"/>
+
+</menu>

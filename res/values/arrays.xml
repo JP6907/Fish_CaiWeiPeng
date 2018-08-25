@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <string-array name="highTem">
+        <item>30℃</item>
+        <item>35℃</item>
+        <item>40℃</item>
+    </string-array>
+    
+    <string-array name="lowTem">
+        <item>20℃</item>
+        <item>15℃</item>
+        <item>10℃</item>
+    </string-array>
+    
+    <string-array name="highHum">
+        <item>80%</item>
+        <item>85%</item>
+        <item>90%</item>
+    </string-array>
+    
+    <string-array name="lowHum">
+        <item>30%</item>
+        <item>25%</item>
+        <item>20%</item>
+        <item>85%</item>
+    </string-array>
+
+</resources>
